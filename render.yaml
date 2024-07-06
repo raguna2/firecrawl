@@ -26,5 +26,5 @@ services:
     sync: false
   region: singapore
   dockerContext: .
-  dockerfilePath: ./Dockerfile
+  dockerfilePath: ./api/Dockerfile
 version: "1"
