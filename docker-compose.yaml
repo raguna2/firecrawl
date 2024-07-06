@@ -51,8 +51,8 @@ services:
     <<: *common-service
     depends_on:
       - redis
-      - playwright-service
       - api
+      - playwright-service
 
   redis:
     image: redis:alpine

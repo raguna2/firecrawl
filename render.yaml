@@ -1,0 +1,30 @@
+# Exported from Render on 2024-07-06T10:40:28Z
+services:
+- type: web
+  name: firecrawl
+  runtime: docker
+  repo: https://github.com/raguna2/firecrawl
+  plan: free
+  envVars:
+  - key: HDX_NODE_BETA_MODE
+    sync: false
+  - key: BULL_AUTH_KEY
+    sync: false
+  - key: TEST_API_KEY
+    sync: false
+  - key: USE_DB_AUTHENTICATION
+    sync: false
+  - key: PLAYWRIGHT_MICROSERVICE_URL
+    sync: false
+  - key: REDIS_URL
+    sync: false
+  - key: HOST
+    sync: false
+  - key: PORT
+    sync: false
+  - key: NUM_WORKERS_PER_QUEUE
+    sync: false
+  region: singapore
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+version: "1"
